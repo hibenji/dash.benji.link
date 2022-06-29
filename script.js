@@ -1,1 +1,0 @@
-import WaaarkLuge from "https://cdn.skypack.dev/@waaark/luge@0.6.1-beta";
