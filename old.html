@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Benji Dashboard!</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yanchokraev/grayshift@1.0.2/dist/css/grayshift.min.css" integrity="sha384-BEz3swSE9zJc0Sejcc2Hzrbjq8/0rFfS2ASsVlVM1F3cdbXW2VYMlhod3OZr1k3M" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/gh/yanchokraev/grayshift@1.0.2/dist/js/grayshift.min.js" integrity="sha384-8jCLciEK/63juoJgc5SxCqHbZwhVfEQb7TUYSdbDrZV97ozI9/UBWCvr9O8r8JJT" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+
+ <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3a42405d21da4cc6827b21fa6eecff48"}'></script><!-- End Cloudflare Web Analytics -->   
+
+<style>
+
+    :root {
+        --bg-color: hsl(44 9% 19%);
+        --typewriterSpeed: 3s;
+        --typewriterCharacters: 24;
+      }
+      
+      body {
+        margin: 0;
+        font-family: "Source Sans Pro", sans-serif;
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        text-align: center;
+        background-image: url("https://cdn.discordapp.com/attachments/788063445093711886/849987394538569790/Untitled_15.png");
+        background-color: #cccccc;
+      }
+      
+      h1 {
+        font-size: clamp(1rem, 3vw + 1rem, 4rem);
+        position: relative;
+        font-family: "Source Code Pro", monospace;
+        position: relative;
+        opacity: 0;
+        width: max-content;
+        color: hsl(0 0% 0%);
+        transform: translateY(-10rem);
+        animation: title 2s ease forwards;
+      }
+      
+      .subtitle {
+        color: hsl(0 0% 0%);
+        font-size: 2rem;
+        font-weight: 400;
+        opacity: 0;
+        transform: translateY(10rem);
+        animation: fadeInUp 2s ease calc(1.5s) forwards;
+      }
+      
+      @keyframes title {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      #thx {
+        position: absolute;
+        bottom: 2em;
+        width: 100%;
+        color: hsl(0 0% 100% / 0.7);
+      
+      }
+    
+      #thx2 {
+        position: absolute;
+        bottom: 1em;
+        width: 100%;
+        color: hsl(0 0% 100% / 0.7);
+      
+      }
+
+
+.container {
+  padding:20px 0;
+  background:
+    url(https://cdn.discordapp.com/attachments/788063445093711886/849987394538569790/Untitled_15.png) fixed;
+}
+.button {
+  width:140px;
+  height:40px;
+  cursor:pointer;
+  color:#fff;
+  margin: auto;
+  border:3px solid transparent;
+  border-radius:50px;
+  text-align:center;
+  font-size:20px;
+  opacity: 0;
+  transform: translateY(10rem);
+  animation: fadeInUp 2s ease calc(1.5s) forwards;
+  background:
+    url(https://cdn.discordapp.com/attachments/788063445093711886/849987394538569790/Untitled_15.png) padding-box fixed,
+    hsl(100 0% 0%);
+}
+.button:hover {
+  background:hsl(100 0% 0%);
+}
+      
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;    
+}
+
+    
+        </style>
+<script async src="https://arc.io/widget.min.js#iwAPatRv"></script>
+
+</head>
+
+<body>
+
+
+
+    <h1>Benji Dashboard</h1>
+    <p class="subtitle">A list of most of my websites</p>
+    
+    <div class="container">
+
+    <div class="row">
+      <div class="column">
+          <div onclick="location.href='https://covid.effi.xyz';" class="button">Covid</div>
+          <br>
+          <div onclick="location.href='https://benji.link';" class="button">Benji Website</div>
+          <br>
+          <div onclick="location.href='https://crypto.effi.xyz';" class="button">Crypto Tracker</div>
+      </div>
+
+      <div class="column">
+          <div onclick="location.href='https://effi.xyz';" class="button">Effi</div>
+          <br>
+          <div onclick="location.href='https://api.effi.xyz';" class="button">Hypixel API</div>
+          <br>
+          <div onclick="location.href='https://home.benji.link';" class="button">Lights</div>
+      </div>
+
+
+      </div>
+    </div>
+
+
+
+
+    <p id="thx">We support EFFI.</p>
+    <p id="thx2">Please support EFFi.</p>
+    
+    
+
+
+    
+</body>
+</html>
